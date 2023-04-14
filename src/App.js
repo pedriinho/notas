@@ -153,9 +153,9 @@ function App() {
                     </Toolbar>
                 </AppBar>
             </Box>
-            <TableContainer>
-                <Table sx={{ minWidth: 700 }} aria-label="customized table" stickyHeader>
-                    <TableHead>
+            <TableContainer sx={{ position: 'fixed', height: '90%', overflow: 'auto' }}>
+                <Table sx={{ minWidth: 'auto' }} aria-label="customized table" stickyHeader>
+                    <TableHead sx={{position: 'sticky', top: '0', zIndex: '1'}} >
                         <TableRow>
                             <StyledTableCell align="center"><strong>Nome</strong></StyledTableCell>
                             <StyledTableCell align="center"><strong>Turma</strong></StyledTableCell>
